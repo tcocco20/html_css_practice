@@ -1,0 +1,27 @@
+* {
+	font-family: sans-serif;
+}
+
+h1 {
+	color: cornflowerblue;
+	font-family: sans-serif;
+}
+
+.second > code {
+	color: green;
+}
+
+code {
+	color: red;
+	font-family: monospace;
+}
+
+li:not(li:first-of-type) {
+	background-color: black;
+	color: white;
+}
+
+ol > li {
+	background-color: black;
+	color: white;
+}
