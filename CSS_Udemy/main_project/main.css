@@ -72,6 +72,34 @@ body {
   font-family: "Anton", sans-serif;
 }
 
+.button {
+  background-color: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: white;
+  color: #0e4f1f;
+}
+
+#key-features {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
 .main-header {
   background-color: #2ddf5c;
   width: 100%;
