@@ -13,6 +13,7 @@
   }
 
   .testimonial__image-container {
+    max-width: 580px;
     width: 65%;
     display: inline-block;
     vertical-align: middle;
