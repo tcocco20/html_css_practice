@@ -11,7 +11,7 @@
   /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
   width: 100vw;
   height: 33vh;
-  margin-top: 2.85rem;
+  margin-top: 3.75rem;
   /* border: 5px dashed red; */
   position: relative;
 }
@@ -81,7 +81,7 @@
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
-    margin-top: 3.85rem;
+    margin-top: 3.75rem;
   }
 
   .plan__list {
@@ -109,11 +109,11 @@
   }
 }
 
-@media (min-width: 40rem) and (max-width: 60rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
-    margin-top: 3.85rem;
+    margin-top: 3.75rem;
   }
 
   #product-overview h1 {
