@@ -8,3 +8,12 @@
   color: #262626;
   border-radius: 5px;
 }
+
+#work {
+  padding-top: 60px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
