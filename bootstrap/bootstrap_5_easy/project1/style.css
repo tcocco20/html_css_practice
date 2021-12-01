@@ -30,3 +30,17 @@ img {
 #footer ul a:hover {
   color: #17a2bb;
 }
+
+@media only screen and (min-width: 200px) and (max-width:767px) {
+  #slider {
+    padding-top: 65px;
+  }
+
+  .navbar-brand img {
+    width: 200px;
+  }
+
+  #about .col-md-6.align-self-center {
+    padding-bottom: 25px;
+  }
+}

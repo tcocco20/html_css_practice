@@ -23,7 +23,11 @@
           ><img src="img/logo.png" alt="" width="250"
         /></a>
 
-        <div id="mainMenu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="mainMenu" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
             <li><a href="#slider" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
@@ -86,7 +90,7 @@
       </button>
     </section>
 
-    <section id="about">
+    <section id="about" class="pt-md-3">
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-self-center">
@@ -107,7 +111,7 @@
             </p>
             <a class="btn btn-info" href="">Learn More</a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 align-self-md-center">
             <img class="w-100" src="img/about.jpg" alt="" />
           </div>
         </div>
