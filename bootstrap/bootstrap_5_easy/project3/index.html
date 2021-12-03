@@ -14,47 +14,146 @@
   <body>
     <!--Header Area-->
     <header id="header">
-      <section id="id_header">
+      <!--Top Header Area-->
+      <section
+        id="top_header"
+        class="bg-primary py-3 text-white d-none d-md-block"
+      >
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <h6><i class="bi bi-phone"></i> +1 123 456 7890 </h6>
+            <div class="col-md-4 pt-2">
+              <h6><i class="bi bi-phone"></i> +1 123 456 7890</h6>
             </div>
-            <div class="col-md-4">
-              <h6><i class="bi bi-envelope"></i> user@domain.com </h6>
+            <div class="col-md-4 pt-2">
+              <h6><i class="bi bi-envelope"></i> user@domain.com</h6>
             </div>
-            <div class="col-md-4">
-              <a class="btn btn-primary text-white" style="background-color: #3b5998;" href=""><i class="bi bi-facebook"></i></a>
+            <div class="col-md-4 text-end">
+              <a
+                class="btn btn-primary text-white"
+                style="background-color: #1877f2"
+                href=""
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="btn btn-primary text-white"
+                style="background-color: #55acee"
+                href=""
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                class="btn btn-primary text-white"
+                style="background-color: #ac2bac"
+                href=""
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="btn btn-primary text-white"
+                style="background-color: #0082ca"
+                href=""
+                ><i class="bi bi-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>
       </section>
-    </header>
-    <!--Top Header Area-->
 
-    <!--Navigation Area-->
+      <!--Navigation Area-->
+      <nav
+        class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 scroll-top"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand">Learn Code</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navMenu" class="navbar-collapse collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Service</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Team</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Analysis</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- Hero Area-->
+    <section id="hero_area" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-self-center">
+            <h3>Let's Learn Coding!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              possimus dolore voluptate reprehenderit impedit repudiandae
+              ducimus dolores! Et, adipisci vero?
+            </p>
+            <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#join">Join Now</a>
 
-    <!-- Start Modal-->
+            <!-- Start Modal-->
+            <div class="modal fade" id="join" tab-index="-1" role="dialog" aria->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark">Join Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Fill out this form.</p>
+                    <form action="">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="text" class="form-control" placeholder="Enter your phone number">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 pt-4">
+            <img src="img/coder.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
 
     <!--Service Area-->
-    
 
     <!--Analysis Area-->
-    
 
     <!--Team Area-->
-    
 
     <!--FAQ Area-->
-    
 
     <!--Contact Area-->
-    
 
     <!--Footer Area-->
-    
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
