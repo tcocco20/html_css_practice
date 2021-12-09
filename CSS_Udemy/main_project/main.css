@@ -166,6 +166,9 @@
 
 .modal {
   position: fixed;
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: opacity 200ms, transform 200ms;
   display: none;
   z-index: 200;
   top: 20%;
