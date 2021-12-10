@@ -1,3 +1,11 @@
 .my-nav {
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255,255,255,0.87) !important;
+  backdrop-filter: blur(10px);
+}
+
+.main-header {
+  background-image: url("./img/Banner.jpg");
+  background-size: cover;
+  padding: 90px 0;
 }
