@@ -8,4 +8,21 @@
   background-image: url("./img/Banner.jpg");
   background-size: cover;
   padding: 90px 0;
+  transition-duration: 0.4s;
+}
+
+.default-header {
+  background-image: url("./img/Banner.jpg");
+  background-size: cover;
+  padding: 60px 0;
+  transition-duration: 0.4s;
+}
+
+.my-card {
+  margin-bottom: 25px;
+}
+
+.my-card:hover {
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  transition-duration: 0.4s;
 }
