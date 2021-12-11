@@ -1,4 +1,8 @@
+$colors: (main:#521751, secondary:#fa923f)
+$def-border: 0.05rem solid map-get($colors, main)
+
 @import "typography.css"
+
 html
   font-size: 94.75%
 
@@ -18,21 +22,20 @@ body
   box-sizing: border-box
 
 .sass-introduction
-  border: 0.05rem solid #521751
-  background: #fae5ff
+  border: $def-border
+  background: lighten(map-get($colors, main), 72%)
   padding: 2rem
   text-align: center
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc
   width: 90%
   box-sizing: border-box
 
-
   & p
     margin: 0
 
 .sass-details
-  border: 0.05rem solid #521751
-  background: #fae5ff
+  border: $def-border
+  background: lighten(map-get($colors, main), 72%)
   padding: 1rem
   text-align: center
   margin: 2rem 0
@@ -40,8 +43,7 @@ body
   box-sizing: border-box
 
 .section-header
-  border-bottom: 0.05rem solid #521751
-
+  border-bottom: $def-border
 
   & h1
     margin: 0 0 1rem 0
@@ -56,26 +58,23 @@ body
   display: flex
   flex-direction: column
 
-
   & li
     margin: 0.2rem 0
     background: white
 
-
   & .documentation-link
     text-decoration: none
-    color: #521751
+    color: map-get($colors, main)
     display: block
     padding: 0.2rem
-    border: 0.05rem solid #521751
-
+    border: $def-border
 
   & .documentation-link:hover,
 
   & .documentation-link:active
     color: white
-    background: #fa923f
-    border-color: #fa923f
+    background: map-get($colors, secondary)
+    border-color: map-get($colors, secondary)
 
 @media (min-width: 40rem)
   html
