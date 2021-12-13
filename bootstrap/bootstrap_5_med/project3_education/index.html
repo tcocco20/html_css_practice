@@ -62,12 +62,48 @@
             </li>
           </ul>
           <div>
-            <a href="" class="btn btn-success btn-sm mx-2">Register Online</a>
+            <a href="" class="btn btn-success btn-sm mx-2" data-bs-toggle="modal" data-bs-target="#registerModal">Register Online</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- </Navbar -->
+    
+    <!-- Modal -->
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Register Online</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="custom-divider"></div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="mb-3">
+          <label for="name">Name</label>
+          <input name="name" type="text" class="form-control form-control-sm" placeholder="Enter Your Name" />
+        </div>
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input name="email" type="email" class="form-control form-control-sm" placeholder="Enter Your Email" />
+        </div>
+        <div class="mb-3">
+          <label for="tel">Phone Number</label>
+          <input name="tel" type="tel" class="form-control form-control-sm" placeholder="Enter Your Phone Number" />
+        </div>
+        <div class="mb-3">
+          <label for="course">Course</label>
+          <input name="course" type="text" class="form-control form-control-sm" placeholder="Enter Your Course Number" />
+        </div>
+        <div class="mb-3">
+          <input type="submit" class="btn btn-success btn-sm w-100" value="Register Online Now" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </Modal -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
