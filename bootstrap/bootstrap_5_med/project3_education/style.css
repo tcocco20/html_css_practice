@@ -23,3 +23,81 @@
 .feature-holder {
   font-size: 14px;
 }
+
+.signup-form-sidebar p,
+.review-text-holder p {
+  font-size: 14px;
+}
+
+.course-list-item {
+  font-size: small;
+}
+
+.reviews-slider {
+  background-color: rgb(235, 235, 235);
+}
+
+#review_slider_content li .card {
+  text-align: center;
+}
+
+#review_slider_content li .card img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+#review_slider_content li .card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#review_slider_content li .card .star {
+  color: orange;
+  font-size: 14px;
+}
+
+#review_slider_content li .card .card-text {
+  font-size: 14px;
+}
+
+.main-footer {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer-widget {
+  margin-bottom: 25px;
+}
+
+.footer-widget h5 {
+  font-size: 16px;
+}
+
+.footer-widget h2 {
+  font-size: 20px;
+}
+
+.footer-widget ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-widget ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: rgb(195, 195, 195);
+}
+
+address p {
+  font-size: 13px;
+  color: rgb(195, 195, 195);
+}
+
+.copy {
+  font-size: 14px;
+}
