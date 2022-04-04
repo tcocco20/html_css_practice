@@ -146,7 +146,7 @@
               <p>Grouping of labels, controls, optional help text and form validation messages.</p>
               <div class="code-live">
                 <form>
-                  <div>
+                  <div class="mb-3">
                     <label for="formGroupText" class="form-label">Text input label</label>
                     <input type="text" class="form-control" placeholder="Text input placeholder" id="formGroupText">
                   </div>
@@ -165,14 +165,14 @@
               <h3 class="component-variation text-muted">Form grid</h3>
               <div class="code-live">
                 <form>
-                  <div>
-                    <div>
+                  <div class="row g-3">
+                    <div class="col-lg-7">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
-                    <div>
+                    <div class="col-lg-3">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
-                    <div>
+                    <div class="col-lg-2">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
                   </div>
@@ -184,25 +184,25 @@
               <h3 class="component-variation text-muted">Gutters</h3>
               <div class="code-live">
                 <form>
-                  <div>
-                    <div>
+                  <div class="row mb-4 gx-2">
+                    <div class="col">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
-                    <div>
+                    <div class="col">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
                   </div>
-                  <div>
-                    <div>
+                  <div class="row g-4">
+                    <div class="col-6">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
-                    <div>
+                    <div class="col-6">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
-                    <div>
+                    <div class="col-6">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
-                    <div>
+                    <div class="col-6">
                       <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="Text input label">
                     </div>
                   </div>
@@ -214,22 +214,22 @@
               <h3 class="component-variation text-muted">Horizontal form</h3>
               <div class="code-live">
                 <form>
-                  <div>
+                  <div class="row mb-3">
                     <label for="horizontalEmail">Email</label>
-                    <div>
+                    <div class="col-md-10">
                       <input type="email" class="form-control" id="horizontalEmail">
                     </div>
                   </div>
-                  <div>
+                  <div class="row mb-3">
                     <label for="horizontalPassword">Password</label>
-                    <div>
+                    <div class="col-md-10">
                       <input type="password" class="form-control" id="horizontalPassword">
                     </div>
                   </div>
                   <fieldset>
-                    <div>
-                      <legend>Level</legend>
-                      <div>
+                    <div class="row mb-3">
+                      <legend class="col-md-2 col-form-label pt-0">Level</legend>
+                      <div class="col-md-10">
                         <div class="form-check">
                           <input type="radio" class="form-check-input" name="horizontalRadio" id="horizontalRadio1">
                           <label class="form-check-label" for="horizontalRadio1">Beginner</label>
@@ -254,21 +254,21 @@
               <h3 class="component-variation text-muted">Horizontal form label sizing</h3>
               <div class="code-live">
                 <form>
-                  <div>
-                    <label for="colFormLabelSmall">Small label</label>
-                    <div>
+                  <div class="row mb-3">
+                    <label class="col-md-2 col-form-label col-form-label-sm" for="colFormLabelSmall">Small label</label>
+                    <div class="col-md-10">
                       <input type="text" class="form-control form-control-sm" placeholder="Small form control" id="colFormLabelSmall">
                     </div>
                   </div>
-                  <div>
-                    <label for="colFormLabelDefault">Default label</label>
-                    <div>
+                  <div class="row mb-3">
+                    <label class="col-md-2 col-form-label" for="colFormLabelDefault">Default label</label>
+                    <div class="col-md-10">
                       <input type="text" class="form-control" placeholder="Default form control" id="colFormLabelDefault">
                     </div>
                   </div>
-                  <div>
-                    <label for="colFormLabelLarge">Large label</label>
-                    <div>
+                  <div class="row mb-3">
+                    <label class="col-md-2 col-form-label col-form-label-lg" for="colFormLabelLarge">Large label</label>
+                    <div class="col-md-10">
                       <input type="text" class="form-control form-control-lg" placeholder="Large form control" id="colFormLabelLarge">
                     </div>
                   </div>
@@ -279,25 +279,25 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Inline form</h3>
               <div class="code-live">
-                <form>
-                  <div>
+                <form class="row row-cols-md-auto g-2 align-items-center">
+                  <div class="col-12">
                     <label for="inlineInputGroup" class="visually-hidden">Usermame</label>
                     <div class="input-group">
                       <div class="input-group-text">@</div>
                       <input type="text" class="form-control" placeholder="Username" id="inlineInputGroup">
                     </div>
                   </div>
-                  <div>
+                  <div class="col-12">
                     <label for="inlineInput" class="visually-hidden">Password</label>
                     <input type="password" class="form-control" placeholder="Password" id="inlineInput">
                   </div>
-                  <div>
+                  <div class="col-12">
                     <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="inlineCheck">
                       <label class="form-check-label" for="inlineCheck">Remember me</label>
                     </div>
                   </div>
-                  <div>
+                  <div class="col-12">
                     <button type="submit" class="btn btn-primary">Log in</button>
                   </div>
                 </form>

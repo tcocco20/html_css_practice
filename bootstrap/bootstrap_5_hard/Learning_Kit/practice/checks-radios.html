@@ -145,28 +145,28 @@
               <h3 class="component-variation text-muted">Checks</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Default</h4>
-                <div>
-                  <input id="checkDefault1">
-                  <label>Default checkbox</label>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkDefault1">
+                  <label class="form-check-label" for="checkDefault1">Default checkbox</label>
                 </div>
-                <div>
-                  <input id="checkDefault2">
-                  <label>Checked checkbox</label>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkDefault2" checked>
+                  <label class="form-check-label" for="checkDefault2">Checked checkbox</label>
                 </div>
                 <h4 class="h5 text-muted mt-3">Indeterminate</h4>
-                <div>
-                  <input id="checkIndeterminate">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkIndeterminate" indeterminate="true">
                   <label>Indeterminate checkbox</label>
-                  <script>var checkbox = document.getElementById('checkIndeterminate');</script>
+                  <script>var checkbox = document.getElementById('checkIndeterminate');checkbox.indeterminate = true;</script>
                 </div>
                 <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <div>
-                  <input id="checkDisabled1">
-                  <label>Disabled default checkbox</label>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkDisabled1" disabled>
+                  <label class="form-check-label" for="checkDisabled1">Disabled default checkbox</label>
                 </div>
-                <div>
-                  <input id="checkDisabled2">
-                  <label>Disabled checked checkbox</label>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" checked disabled id="checkDisabled2">
+                  <label class="form-check-label" for="checkDisabled2">Disabled checked checkbox</label>
                 </div>
               </div>
             </div>
@@ -175,22 +175,22 @@
               <h3 class="component-variation text-muted">Radios</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Default</h4>
-                <div>
-                  <input name="radioDefault" id="radioDefault1">
-                  <label>Default radio</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="radioDefault" id="radioDefault1">
+                  <label class="form-check-label" for="radioDefault1">Default radio</label>
                 </div>
                 <div>
-                  <input name="radioDefault" id="radioDefault2">
-                  <label>Checked radio</label>
+                  <input type="radio" class="form-check-input" name="radioDefault" checked id="radioDefault2">
+                  <label class="form-check-label" for="radioDefault2">Checked radio</label>
                 </div>
                 <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <div>
-                  <input name="radioDisabled" id="radioDisabled1">
-                  <label>Disabled default radio</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="radioDisabled" id="radioDisabled1" disabled>
+                  <label class="form-check-label" for="radioDisabled1">Disabled default radio</label>
                 </div>
-                <div>
-                  <input name="radioDisabled" id="radioDisabled2">
-                  <label>Disabled checked radio</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" disabled checked name="radioDisabled" id="radioDisabled2">
+                  <label class="form-check-label" for="radioDisabled2">Disabled checked radio</label>
                 </div>
               </div>
             </div>
@@ -199,22 +199,22 @@
               <h3 class="component-variation text-muted">Switches</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Default</h4>
-                <div>
-                  <input id="switchDefault1">
-                  <label>Default switch</label>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switchDefault1">
+                  <label class="form-check-label" for="switchDefault1">Default switch</label>
                 </div>
-                <div>
-                  <input id="switchDefault2" checked>
-                  <label>Checked switch</label>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switchDefault2" checked>
+                  <label class="form-check-label" for="switchDefault2">Checked switch</label>
                 </div>
                 <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <div>
-                  <input id="switchDisabled1">
-                  <label>Disabled default switch</label>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switchDisabled1" disabled>
+                  <label class="form-check-label" for="switchDisabled1">Disabled default switch</label>
                 </div>
-                <div>
-                  <input id="switchDisabled2">
-                  <label>Disabled checked switch</label>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" disabled checked id="switchDisabled2">
+                  <label class="form-check-label" for="switchDisabled2">Disabled checked switch</label>
                 </div>
               </div>
             </div>
@@ -223,30 +223,30 @@
               <h3 class="component-variation text-muted">Inline</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Check</h4>
-                <div>
-                  <input id="checkInline1">
-                  <label>1</label>
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" class="form-check-input" id="checkInline1">
+                  <label class="form-check-label" for="checkInline1">1</label>
                 </div>
-                <div>
-                  <input id="checkInline2">
-                  <label>2</label>
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" class="form-check-input" checked id="checkInline2">
+                  <label class="form-check-label" for="checkInline2">2</label>
                 </div>
-                <div>
-                  <input id="checkInline3">
-                  <label>3</label>
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" class="form-check-input" id="checkInline3" disabled>
+                  <label class="form-check-label" for="checkInline3">3</label>
                 </div>
                 <h4 class="h5 text-muted mt-3">Radio</h4>
-                <div>
-                  <input name="radioInline" id="radioInline1">
-                  <label>1</label>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="radioInline" id="radioInline1">
+                  <label class="form-check-label" for="radioInline1">1</label>
                 </div>
-                <div>
-                  <input name="radioInline" id="radioInline2">
-                  <label>2</label>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" checked name="radioInline" id="radioInline2">
+                  <label class="form-check-label" for="radioInline2">2</label>
                 </div>
-                <div>
-                  <input name="radioInline" id="radioInline3">
-                  <label>3</label>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" disabled name="radioInline" id="radioInline3">
+                  <label class="form-check-label" for="radioInline3">3</label>
                 </div>
               </div>
             </div>
@@ -254,8 +254,8 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">No labels</h3>
               <div class="code-live">
-                <input id="checkNolabel">
-                <input name="radioNolabel" id="radioNoLabel1">
+                <input type="checkbox" class="form-check-input" id="checkNolabel" aria-label="Checkbox label">
+                <input type="radio" class="form-check-input" name="radioNolabel" id="radioNoLabel1" aria-label="Radio Label">
               </div>
             </div>
 
@@ -263,28 +263,28 @@
               <h3 class="component-variation text-muted">Toggle buttons</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Checkbox</h4>
-                <input id="checkToggleButton1">
-                <label>Checkbox</label>
+                <input type="checkbox" class="btn-check" autocomplete="off" id="checkToggleButton1">
+                <label class="btn btn-secondary" for="checkToggleButton1" >Checkbox</label>
                 <h4 class="h5 text-muted mt-3">Radio</h4>
-                <div>
-                  <input name="radioToggleButton" id="radioToggleButton1">
-                  <label>Radio 1</label>
-                  <input name="radioToggleButton" id="radioToggleButton2">
-                  <label>Radio 2</label>
-                  <input name="radioToggleButton" id="radioToggleButton3">
-                  <label>Radio 3</label>
+                <div class="btn-group">
+                  <input type="radio" class="btn-check" name="radioToggleButton" id="radioToggleButton1">
+                  <label class="btn btn-secondary" for="radioToggleButton1">Radio 1</label>
+                  <input type="radio" class="btn-check" name="radioToggleButton" id="radioToggleButton2">
+                  <label class="btn btn-secondary" for="radioToggleButton2">Radio 2</label>
+                  <input type="radio" class="btn-check" name="radioToggleButton" id="radioToggleButton3">
+                  <label class="btn btn-secondary" for="radioToggleButton3">Radio 3</label>
                 </div>
                 <h4 class="h5 text-muted mt-3">Outlined</h4>
-                <input id="checkToggleButtonOutlined1">
-                <label>Checkbox</label>
+                <input type="checkbox" class="btn-check" id="checkToggleButtonOutlined1">
+                <label class="btn btn-outline-secondary" for="radioToggleButtonOutlined1">Checkbox</label>
                 <br><br>
-                <div>
-                  <input name="radioToggleButtonOutlined" id="radioToggleButtonOutlined1">
-                  <label>Radio 1</label>
-                  <input name="radioToggleButtonOutlined" id="radioToggleButtonOutlined2">
-                  <label>Radio 2</label>
-                  <input name="radioToggleButtonOutlined" id="radioToggleButtonOutlined3">
-                  <label>Radio 3</label>
+                <div class="btn-group">
+                  <input type="radio" class="btn-check" name="radioToggleButtonOutlined" id="radioToggleButtonOutlined1">
+                  <label class="btn btn-outline-primary" for="radioToggleButtonOutlined1">Radio 1</label>
+                  <input type="radio" class="btn-check" name="radioToggleButtonOutlined" id="radioToggleButtonOutlined2">
+                  <label class="btn btn-outline-success" for="radioToggleButtonOutlined2">Radio 2</label>
+                  <input type="radio" class="btn-check" name="radioToggleButtonOutlined" id="radioToggleButtonOutlined3">
+                  <label class="btn btn-outline-info" for="radioToggleButtonOutlined3">Radio 3</label>
                 </div>
               </div>
             </div>
