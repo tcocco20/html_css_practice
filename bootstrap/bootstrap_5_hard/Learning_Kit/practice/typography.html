@@ -156,12 +156,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Heading classes</h3>
               <div class="code-live">
-                <p>.h1 heading</p>
-                <p>.h2 heading</p>
-                <p>.h3 heading</p>
-                <p>.h4 heading</p>
-                <p>.h5 heading</p>
-                <p>.h6 heading</p>
+                <p class="h1">.h1 heading</p>
+                <p class="h2">.h2 heading</p>
+                <p class="h3">.h3 heading</p>
+                <p class="h4">.h4 heading</p>
+                <p class="h5">.h5 heading</p>
+                <p class="h6">.h6 heading</p>
               </div>
             </div>
 
@@ -170,27 +170,27 @@
               <div class="code-live">
                 <h1>
                   &lt;h1&gt; heading
-                  <small>Secondary heading</small>
+                  <small class="text-muted">Secondary heading</small>
                 </h1>
                 <h2>
                   &lt;h2&gt; heading
-                  <small>Secondary heading</small>
+                  <small class="text-muted">Secondary heading</small>
                 </h2>
                 <h3>
                   &lt;h3&gt; heading
-                  <small>Secondary heading</small>
+                  <small class="text-muted">Secondary heading</small>
                 </h3>
                 <h4>
                   &lt;h4&gt; heading
-                  <small>Secondary heading</small>
+                  <small class="text-muted">Secondary heading</small>
                 </h4>
                 <h5>
                   &lt;h5&gt; heading
-                  <small>Secondary heading</small>
+                  <small class="text-muted">Secondary heading</small>
                 </h5>
                 <h6>
                   &lt;h6&gt; heading
-                  <small>Secondary heading</small>
+                  <small class="text-muted">Secondary heading</small>
                 </h6>
               </div>
             </div>
@@ -198,19 +198,19 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Display headings</h3>
               <div class="code-live">
-                <h1>Display heading 1</h1>
-                <h1>Display heading 2</h1>
-                <h1>Display heading 3</h1>
-                <h1>Display heading 4</h1>
-                <h1>Display heading 5</h1>
-                <h1>Display heading 6</h1>
+                <h1 class="display-1">Display heading 1</h1>
+                <h1 class="display-2">Display heading 2</h1>
+                <h1 class="display-3">Display heading 3</h1>
+                <h1 class="display-4">Display heading 4</h1>
+                <h1 class="display-5">Display heading 5</h1>
+                <h1 class="display-6">Display heading 6</h1>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Lead paragraph</h3>
               <div class="code-live">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
               </div>
             </div>
 
@@ -233,18 +233,18 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Inline styles using classes</h3>
               <div class="code-live">
-                <p><span>Highlighted text.</span></p>
-                <p><span>Fine print.</span></p>
-                <p><span>Underlined text.</span></p>
-                <p><span>Text that is incorrect.</span></p>
+                <p><span class="mark">Highlighted text.</span></p>
+                <p><span class="small">Fine print.</span></p>
+                <p><span class="text-decoration-underline">Underlined text.</span></p>
+                <p><span class="text-decoration-line-through">Text that is incorrect.</span></p>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Abbreviations</h3>
               <div class="code-live">
-                <p><abbr>attr</abbr></p>
-                <p><abbr>html</abbr></p>
+                <p><abbr title="Attribute">attr</abbr></p>
+                <p><abbr title="HyperText Markup Language" class="initialism">html</abbr></p>
               </div>
             </div>
 
@@ -257,23 +257,23 @@
                 </blockquote>
                 <h4 class="h5 text-muted mt-3">Attribution</h4>
                 <figure>
-                  <blockquote>
+                  <blockquote class="blockquote">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
                   </blockquote>
-                  <figcaption>Author name in <cite>Source Title</cite></figcaption>
+                  <figcaption class="blockquote-footer">Author name in <cite title="Source Title">Source Title</cite></figcaption>
                 </figure>
                 <h4 class="h5 text-muted mt-3">Alignment</h4>
-                <figure>
-                  <blockquote>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
                   </blockquote>
-                  <figcaption>Author name in <cite>Source Title</cite></figcaption>
+                  <figcaption class="blockquote-footer">Author name in <cite title="Source Title">Source Title</cite></figcaption>
                 </figure>
-                <figure>
-                  <blockquote>
+                <figure class="text-end">
+                  <blockquote class="blockquote">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
                   </blockquote>
-                  <figcaption>Author name in <cite>Source Title</cite></figcaption>
+                  <figcaption class="blockquote-footer">Author name in <cite title="Source Title">Source Title</cite></figcaption>
                 </figure>
               </div>
             </div>
@@ -282,12 +282,12 @@
               <h3 class="component-variation text-muted">Unstyled lists</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Unordered lists</h4>
-                <ul>
+                <ul class="list-unstyled">
                   <li>First item</li>
                   <li>Second item</li>
                   <li>Third item</li>
                   <li>Sub-items:
-                    <ul>
+                    <ul class="list-unstyled">
                       <li>First sub-item</li>
                       <li>Second sub-item</li>
                       <li>Third sub-item</li>
@@ -307,7 +307,7 @@
                   </li>
                 </ul>
                 <h4 class="h5 text-muted mt-3">Ordered lists</h4>
-                <ol>
+                <ol class="list-unstyled">
                   <li>First item</li>
                   <li>Second item</li>
                   <li>Third item</li>
@@ -338,16 +338,16 @@
               <h3 class="component-variation text-muted">Inline lists</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Unordered lists</h4>
-                <ul>
-                  <li>First inline item</li>
-                  <li>Second inline item</li>
-                  <li>Third inline item</li>
+                <ul class="list-inline">
+                  <li class="list-inline-item">First inline item</li>
+                  <li class="list-inline-item">Second inline item</li>
+                  <li class="list-inline-item">Third inline item</li>
                 </ul>
                 <h4 class="h5 text-muted mt-3">Ordered lists</h4>
-                <ol>
-                  <li>First inline item</li>
-                  <li>Second inline item</li>
-                  <li>Third inline item</li>
+                <ol class="list-inline">
+                  <li class="list-inline-item">First inline item</li>
+                  <li class="list-inline-item">Second inline item</li>
+                  <li class="list-inline-item">Third inline item</li>
                 </ol>
               </div>
             </div>
@@ -355,18 +355,18 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Description lists</h3>
               <div class="code-live">
-                <dl>
-                  <dt>Term</dt>
-                  <dd>Description</dd>
-                  <dt>Very long and truncated term</dt>
-                  <dd>Description</dd>
-                  <dt>Term</dt>
-                  <dd>
-                    <dl>
-                      <dt>Nested term</dt>
-                      <dd>Nested description</dd>
-                      <dt>Very long and truncated term</dt>
-                      <dd>Nested description</dd>
+                <dl class="row">
+                  <dt class="col-md-3">Term</dt>
+                  <dd class="col-md-9">Description</dd>
+                  <dt class="col-md-3 text-truncate">Very long and truncated term</dt>
+                  <dd class="col-md-9">Description</dd>
+                  <dt class="col-md-3">Term</dt>
+                  <dd class="col-md-9">
+                    <dl class="row">
+                      <dt class="col-md-4">Nested term</dt>
+                      <dd class="col-md-8">Nested description</dd>
+                      <dt class="col-md-4 text-truncate">Very long and truncated term</dt>
+                      <dd class="col-md-8">Nested description</dd>
                     </dl>
                   </dd>
                 </dl>

@@ -144,7 +144,7 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Default</h3>
               <div class="code-live">
-                <table>
+                <table class="table">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -183,7 +183,7 @@
                 <p>Use the following contextual color classes for a table (<code>&lt;table&gt;</code>), row (<code>&lt;tr&gt;</code>) or cell (<code>&lt;th&gt;</code> or <code>&lt;td&gt;</code>): <code>.table-primary</code>, <code>.table-secondary</code>, <code>.table-success</code>, <code>.table-danger</code>, <code>.table-warning</code>, <code>.table-info</code>, <code>.table-light</code>, and <code>.table-dark</code>.</p>
                 <p>These color classes work together with all the other table styles.</p>
                 <h4 class="h5 text-muted mt-3">Table</h4>
-                <table>
+                <table class="table table-primary">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -214,9 +214,9 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Row</h4>
-                <table>
+                <table class="table">
                   <thead>
-                    <tr>
+                    <tr class="table-info">
                       <th scope="col">#</th>
                       <th scope="col">Country</th>
                       <th scope="col">Language</th>
@@ -245,7 +245,7 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Cell</h4>
-                <table>
+                <table class="table">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -257,7 +257,7 @@
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
-                      <td>England</td>
+                      <td class="table-success">England</td>
                       <td>English</td>
                       <td>London</td>
                     </tr>
@@ -282,7 +282,7 @@
               <h3 class="component-variation text-muted">Accents</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Striped</h4>
-                <table>
+                <table class="table table-striped">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -313,7 +313,7 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Hover</h4>
-                <table>
+                <table class="table table-hover">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -344,7 +344,7 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Striped and hover</h4>
-                <table>
+                <table class="table table-striped table-hover">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -375,9 +375,9 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Active row or cell</h4>
-                <table>
+                <table class="table">
                   <thead>
-                    <tr>
+                    <tr class="table-active">
                       <th scope="col">#</th>
                       <th scope="col">Country</th>
                       <th scope="col">Language</th>
@@ -387,7 +387,7 @@
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
-                      <td>England</td>
+                      <td class="table-active">England</td>
                       <td>English</td>
                       <td>London</td>
                     </tr>
@@ -412,7 +412,7 @@
               <h3 class="component-variation text-muted">Borders</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Bordered</h4>
-                <table>
+                <table class="table table-bordered">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -443,7 +443,7 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Colored border</h4>
-                <table>
+                <table class="table table-bordered border-danger">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -474,7 +474,7 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Borderless</h4>
-                <table>
+                <table class="table table-borderless">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -510,7 +510,7 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Small</h3>
               <div class="code-live">
-                <table>
+                <table class="table table-sm">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -546,7 +546,7 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Vertical alignment</h3>
               <div class="code-live">
-                <table>
+                <table class="table align-middle">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -556,7 +556,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="align-top">
                       <th scope="row">1</th>
                       <td>England</td>
                       <td>English</td>
@@ -564,7 +564,7 @@
                     </tr>
                     <tr>
                       <th scope="row">2</th>
-                      <td>France</td>
+                      <td class="align-bottom">France</td>
                       <td>French</td>
                       <td>ParLorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.is</td>
                     </tr>
@@ -582,7 +582,7 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Nesting</h3>
               <div class="code-live">
-                <table>
+                <table class="table">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -607,7 +607,7 @@
                     <tr>
                       <th scope="row">3</th>
                       <td colspan="3">
-                        <table>
+                        <table class="table table-striped">
                           <thead>
                             <tr>
                               <th scope="col">#</th>
@@ -647,8 +647,8 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Head and foot</h3>
               <div class="code-live">
-                <table>
-                  <thead>
+                <table class="table">
+                  <thead class="table-dark">
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">Country</th>
@@ -676,7 +676,7 @@
                       <td>Berlin</td>
                     </tr>
                   </tbody>
-                  <tfoot>
+                  <tfoot class="table-dark">
                     <tr>
                       <td>Footer</td>
                       <td>Footer</td>
@@ -692,8 +692,8 @@
               <h3 class="component-variation text-muted">Captions</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Default</h4>
-                <table>
-                  <caption>Table caption</caption>
+                <table class="table">
+                  <caption class="small">Table caption</caption>
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -724,7 +724,7 @@
                   </tbody>
                 </table>
                 <h4 class="h5 text-muted mt-3">Top</h4>
-                <table>
+                <table class="table caption-top">
                   <caption>Table caption</caption>
                   <thead>
                     <tr>
@@ -762,8 +762,8 @@
               <h3 class="component-variation text-muted">Responsive</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">All breakpoints</h4>
-                <div>
-                  <table>
+                <div class="table-responsive">
+                  <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -855,8 +855,8 @@
                   </table>
                 </div>
                 <h4 class="h5 text-muted mt-3">Below small</h4>
-                <div>
-                  <table>
+                <div class="table-responsive-sm">
+                  <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">#</th>

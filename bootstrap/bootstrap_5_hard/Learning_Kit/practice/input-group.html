@@ -145,20 +145,20 @@
               <h3 class="component-variation text-muted">Text</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Before</h4>
-                <div>
-                  <span id="before">#</span>
-                  <input type="text" placeholder="Hashtag">
+                <div class="input-group">
+                  <span class="input-group-text" id="before">#</span>
+                  <input type="text" class="form-control" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="before">
                 </div>
                 <h4 class="h5 text-muted mt-3">After</h4>
-                <div>
-                  <input type="text" placeholder="Username">
-                  <span id="after">@example.com</span>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="after">
+                  <span class="input-group-text" id="after">@example.com</span>
                 </div>
                 <h4 class="h5 text-muted mt-3">Before and after</h4>
-                <div>
-                  <span>$</span>
-                  <input type="text">
-                  <span>.00</span>
+                <div class="input-group">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="Amount (to nearest dollar)">
+                  <span class="input-group-text">.00</span>
                 </div>
               </div>
             </div>
@@ -167,14 +167,14 @@
               <h3 class="component-variation text-muted">Other form controls</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Textarea</h4>
-                <div>
-                  <span id="textarea">Message</span>
-                  <textarea placeholder="Write your message here"></textarea>
+                <div class="input-group">
+                  <span class="input-group-text" id="textarea">Message</span>
+                  <textarea class="form-control" aria-label="Message" aria-describedby="textarea" placeholder="Write your message here"></textarea>
                 </div>
                 <h4 class="h5 text-muted mt-3">Select</h4>
-                <div>
-                  <span id="select">Select option</span>
-                  <select>
+                <div class="input-group">
+                  <span class="input-group-text" id="select">Select option</span>
+                  <select class="form-select" aria-label="Default select" aria-describedby="select">
                     <option value="1">Option one</option>
                     <option value="2">Option two</option>
                     <option value="3">Option three</option>
@@ -183,9 +183,9 @@
                   </select>
                 </div>
                 <h4 class="h5 text-muted mt-3">File</h4>
-                <div>
-                  <label>Upload</label>
-                  <input id="file">
+                <div class="input-group">
+                  <label class="input-group-text" for="file">Upload</label>
+                  <input type="file" id="file" class="form-control">
                 </div>
               </div>
             </div>
@@ -193,10 +193,10 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Label</h3>
               <div class="code-live">
-                <label>Input group label</label>
-                <div>
-                  <span id="labelText">#</span>
-                  <input type="text" id="label" placeholder="Hashtag">
+                <label class="form-label" for="label">Input group label</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="labelText">#</span>
+                  <input type="text" id="label" class="form-control" placeholder="Hashtag" aria-label="Default input" aria-describedby="labelText">
                 </div>
               </div>
             </div>
@@ -205,19 +205,19 @@
               <h3 class="component-variation text-muted">Sizing</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Small</h4>
-                <div>
-                  <span id="small">#</span>
-                  <input type="text" placeholder="Hashtag">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-text" id="small">#</span>
+                  <input class="form-control" type="text" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="small">
                 </div>
                 <h4 class="h5 text-muted mt-3">Default</h4>
-                <div>
-                  <span id="default">#</span>
-                  <input type="text" placeholder="Hashtag">
+                <div class="input-group">
+                  <span class="input-group-text" id="default">#</span>
+                  <input class="form-control" type="text" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="default">
                 </div>
                 <h4 class="h5 text-muted mt-3">Large</h4>
-                <div>
-                  <span id="large">#</span>
-                  <input type="text" placeholder="Hashtag">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text" id="large">#</span>
+                  <input class="form-control" type="text" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="large">
                 </div>
               </div>
             </div>
@@ -226,18 +226,18 @@
               <h3 class="component-variation text-muted">Checks</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Check</h4>
-                <div>
-                  <span>
-                     <input type="checkbox">
+                <div class="input-group">
+                  <span class="input-group-text" aria-label="Checkbox for text input">
+                     <input class="form-check-input" type="checkbox">
                   </span>
-                  <input type="text" placeholder="Text input with checkbox">
+                  <input class="form-control" type="text" placeholder="Text input with checkbox" aria-label="Text input with checkbox">
                 </div>
                 <h4 class="h5 text-muted mt-3">Radio</h4>
-                <div>
-                  <span>
-                     <input type="radio">
+                <div class="input-group">
+                  <span class="input-group-text" aria-label="Radio button for text input">
+                     <input class="form-check-input" type="radio">
                   </span>
-                  <input type="text" placeholder="Text input with radio button">
+                  <input class="form-control" type="text" placeholder="Text input with radio button" aria-label="Text input with radio">
                 </div>
               </div>
             </div>
@@ -245,10 +245,10 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Multiple inputs</h3>
               <div class="code-live">
-                <div>
-                  <span>First and last name</span>
-                  <input type="text">
-                  <input type="text">
+                <div class="input-group">
+                  <span class="input-group-text">First and last name</span>
+                  <input class="form-control" type="text" aria-label="First Name">
+                  <input class="form-control" type="text" aria-label="Last Name">
                 </div>
               </div>
             </div>
@@ -257,18 +257,18 @@
               <h3 class="component-variation text-muted">Multiple text</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Before</h4>
-                <div>
-                  <span>1</span>
-                  <span>2</span>
-                  <span>3</span>
-                  <input type="text">
+                <div class="input-group">
+                  <span class="input-group-text">1</span>
+                  <span class="input-group-text">2</span>
+                  <span class="input-group-text">3</span>
+                  <input class="form-control" type="text" aria-label="Text input with multiple labels">
                 </div>
                 <h4 class="h5 text-muted mt-3">After</h4>
-                <div>
-                  <input type="text">
-                  <span>1</span>
-                  <span>2</span>
-                  <span>3</span>
+                <div class="input-group">
+                  <input class="form-control" type="text" aria-label="Multiple text after">
+                  <span class="input-group-text">1</span>
+                  <span class="input-group-text">2</span>
+                  <span class="input-group-text">3</span>
                 </div>
               </div>
             </div>
@@ -277,14 +277,14 @@
               <h3 class="component-variation text-muted">Button</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Before</h4>
-                <div>
-                  <button type="button">Search</button>
-                  <input type="text" placeholder="Search text here">
+                <div class="input-group">
+                  <button class="input-group-text btn btn-secondary" type="button" id="btnBefore">Search</button>
+                  <input class="form-control" type="text" placeholder="Search text here" aria-label="Search text here" aria-describedby="btnBefore">
                 </div>
                 <h4 class="h5 text-muted mt-3">After</h4>
-                <div>
-                  <input type="text" placeholder="Search text here">
-                  <button type="button">Search</button>
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Search text here" aria-label="Search text here" aria-describedby="btnAfter">
+                  <button class="input-group-text btn btn-success" id="btnAfter" type="button">Search</button>
                 </div>
               </div>
             </div>
@@ -292,14 +292,14 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Dropdown</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" id="dropdown">Topic</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="input-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Topic</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdown">
+                    <a href="#" class="dropdown-item">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
-                  <input type="text" placeholder="Search text here">
+                  <input class="form-control" type="text" placeholder="Search text here" aria-label="Text input with dropdown">
                 </div>
               </div>
             </div>
@@ -307,15 +307,15 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Dropdown split button</h3>
               <div class="code-live">
-                <div>
-                  <button type="button">Topic</button>
-                  <button type="button" id="dropdownSplit"><span>Toggle dropdown</span></button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="input-group">
+                  <button class="btn btn-secondary" type="button">Topic</button>
+                  <button class="dropdown-toggle dropdown-toggle-split btn btn-secondary" type="button" id="dropdownSplit" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle dropdown</span></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownSplit">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
-                  <input type="text" placeholder="Search text here">
+                  <input class="form-control" type="text" placeholder="Search text here">
                 </div>
               </div>
             </div>
