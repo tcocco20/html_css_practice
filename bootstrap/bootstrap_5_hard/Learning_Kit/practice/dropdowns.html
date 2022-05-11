@@ -144,12 +144,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Button</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownButton">Dropdown button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButton">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownButton" >
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -158,12 +158,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Link</h3>
               <div class="code-live">
-                <div>
-                  <a class="btn btn-secondary" href="#" id="dropdownLink">Dropdown link</a>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownLink" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -172,13 +172,13 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Split button</h3>
               <div class="code-live">
-                <div>
+                <div class="btn-group">
                   <button type="button" class="btn btn-secondary">Dropdown split button</button>
-                  <button type="button" class="btn btn-secondary" id="dropdownSplit"><span>Toggle dropdown</span></button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownSplit" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle dropdown</span></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownSplit">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -187,30 +187,30 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Sizing</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownSmall">Small button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownSmall" data-bs-toggle="dropdown" aria-expanded="false">Small button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownSmall">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownMedium">Medium button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMedium" data-bs-toggle="dropdown" aria-expanded="false">Medium button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMedium">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownLarge">Large button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle btn-lg" id="dropdownLarge" data-bs-toggle="dropdown" aria-expanded="false">Large button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownLarge">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -219,12 +219,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Dark</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownDark">Dropdown dark</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDark" data-bs-toggle="dropdown" aria-expanded="false">Dropdown dark</button>
+                  <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownDark">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <h4 class="h5 text-muted mt-3">In navbar component</h4>
@@ -233,17 +233,17 @@
                     <a href="#" class="navbar-brand">Navbar</a>
                     <div class="collapse navbar-collapse">
                       <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a href="#" class="nav-link" id="navbarDropdownDark">Dropdown dark</a>
-                          <ul>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownDark" data-bs-toggle="dropdown"  aria-expanded="false">Dropdown dark</a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
                             <li>
-                              <a href="#">First item</a>
+                              <a class="dropdown-item" href="#">First item</a>
                             </li>
                             <li>
-                              <a href="#">Second item</a>
+                              <a class="dropdown-item" href="#">Second item</a>
                             </li>
                             <li>
-                              <a href="#">Third item</a>
+                              <a class="dropdown-item" href="#">Third item</a>
                             </li>
                           </ul>
                         </li>
@@ -257,30 +257,30 @@
             <div class="code-example mb-5" data-css='.dropup {&#10;&#9;margin-top: 120px;&#10;}&#10;.dropstart {&#10;&#9;margin-left: 140px;&#10;}'>
               <h3 class="component-variation text-muted">Direction</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropup">Dropup</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="btn-group dropup">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropup" data-bs-toggle="dropdown" aria-expanded="false">Dropup</button>
+                  <div class="dropdown-menu" aria-labelledby="dropup">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropend">Dropright</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropend">Dropright</button>
+                  <div class="dropdown-menu" aria-labelledby="dropend">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropstart">Dropleft</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="btn-group dropstart">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropstart" data-bs-toggle="dropdown" aria-expanded="false">Dropleft</button>
+                  <div class="dropdown-menu" aria-labelledby="dropstart">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -289,12 +289,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Alignment</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownRightAligned">Dropdown right-aligned</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownRightAligned" data-bs-toggle="dropdown" aria-expanded="false">Dropdown right-aligned</button>
+                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownRightAligned">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -304,22 +304,22 @@
               <h3 class="component-variation text-muted">Responsive alignment</h3>
               <div class="code-live">
                 <p>To right-align the dropdown menu for the given breakpoint or larger, add <code>.dropdown-menu{-sm|-md|-lg|-xl}-end</code>.</p>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownResponsive">Dropdown responsive alignment</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownResponsive" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">Dropdown responsive alignment</button>
+                  <div class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownResponsive">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br><br>
                 <p>To left-align the dropdown menu for the given breakpoint or larger, add <code>.dropdown-menu-end</code> and <code>.dropdown-menu{-sm|-md|-lg|-xl}-start</code>.</p>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownResponsive">Dropdown responsive alignment</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownResponsive2" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">Dropdown responsive alignment</button>
+                  <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="dropdownResponsive2">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -328,12 +328,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Button items</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownButtonItems">Dropdown button</button>
-                  <div>
-                    <button type="button">First button</button>
-                    <button type="button">Second button</button>
-                    <button type="button">Third button</button>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButtonItems" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownButtonItems">
+                    <button class="dropdown-item" type="button">First button</button>
+                    <button class="dropdown-item" type="button">Second button</button>
+                    <button class="dropdown-item" type="button">Third button</button>
                   </div>
                 </div>
               </div>
@@ -342,12 +342,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Active item</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownActive">Dropdown button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownActive" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownActive">
+                    <a class="dropdown-item active" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -356,12 +356,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Disabled item</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownDisabled">Dropdown button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDisabled" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownDisabled">
+                    <a class="dropdown-item disabled" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -370,13 +370,13 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Header</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownHeader">Dropdown button</button>
-                  <div>
-                    <h6>Dropdown header</h6>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownHeader" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownHeader">
+                    <h6 class="dropdown-header">Dropdown header</h6>
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -385,13 +385,13 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Divider</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownDivider">Dropdown button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <div></div>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDivider" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownDivider">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -400,12 +400,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Text item</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownText">Dropdown button</button>
-                  <div>
-                    <span>Dropdown text item</span>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownText" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownText">
+                    <span class="dropdown-item-text">Dropdown text item</span>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -414,13 +414,13 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Reference</h3>
               <div class="code-live">
-                <div>
+                <div class="btn-group">
                   <button type="button" class="btn btn-secondary">Dropdown split button</button>
-                  <button type="button" class="btn btn-secondary" id="dropdownReference"><span>Toggle dropdown</span></button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"><span class="visually-hidden">Toggle dropdown</span></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownReference">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -429,12 +429,12 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Offset</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownOffset">Dropdown button</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="30,10">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownOffset">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>
@@ -443,39 +443,39 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Auto close</h3>
               <div class="code-live">
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownAutocloseDefault">Default</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownAutocloseDefault" data-bs-toggle="dropdown" aria-expanded="false">Default</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownAutocloseDefault">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownAutocloseInside">Auto close inside</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownAutocloseInside" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="inside">Auto close inside</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownAutocloseInside">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownAutocloseOutside">Auto close outside</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownAutocloseOutside" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Auto close outside</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownAutocloseOutside">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
                 <br>
-                <div>
-                  <button type="button" class="btn btn-secondary" id="dropdownAutocloseManual">Manual close</button>
-                  <div>
-                    <a href="#">First item</a>
-                    <a href="#">Second item</a>
-                    <a href="#">Third item</a>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownAutocloseManual" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">Manual close</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownAutocloseManual">
+                    <a class="dropdown-item" href="#">First item</a>
+                    <a class="dropdown-item" href="#">Second item</a>
+                    <a class="dropdown-item" href="#">Third item</a>
                   </div>
                 </div>
               </div>

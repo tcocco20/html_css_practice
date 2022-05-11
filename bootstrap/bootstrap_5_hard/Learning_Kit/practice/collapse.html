@@ -145,8 +145,8 @@
               <h3 class="component-variation text-muted">Link</h3>
               <p>Show and hide other content with link using the "href" attribute</p>
               <div class="code-live">
-                <a href="" class="btn btn-primary">Link with href</a>
-                <div id="hrefCollapse">
+                <a href="#hrefCollapse" class="btn btn-primary" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hrefCollapse">Link with href</a>
+                <div class="collapse" id="hrefCollapse">
                   <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
                 </div>
               </div>
@@ -156,8 +156,8 @@
               <h3 class="component-variation text-muted">Button</h3>
               <p>Show and hide other content with button using the "data-bs-target" attribute</p>
               <div class="code-live">
-                <button type="button" class="btn btn-primary">Button with data-bs-target</button>
-                <div id="dataTargetCollapse">
+                <button data-bs-toggle="collapse" data-bs-target="#dataTargetCollapse" type="button" class="btn btn-primary" aria-expanded="false" aria-controls="dataTargetCollapse">Button with data-bs-target</button>
+                <div class="collapse" id="dataTargetCollapse">
                   <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
                 </div>
               </div>
@@ -167,10 +167,10 @@
               <h3 class="component-variation text-muted">Horizontal</h3>
               <p>Set width on the immediate child of the collapsed element</p>
               <div class="code-live">
-                <button type="button" class="btn btn-primary">Button with data-bs-target</button>
-                <div  style="min-height: 170px;">
-                  <div id="horizontalCollapse">
-                    <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
+                <button data-bs-toggle="collapse" data-bs-target="#horizontalCollapse" aria-expanded="false" aria-controls="horizontalCollapse" type="button" class="btn btn-primary">Button with data-bs-target</button>
+                <div style="min-height: 170px;">
+                  <div class="collapse collapse-horizontal" id="horizontalCollapse">
+                    <div class="alert alert-success" style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
                   </div>
                 </div>
               </div>
@@ -179,19 +179,19 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Multiple targets</h3>
               <div class="code-live">
-                <button type="button" class="btn btn-primary">Toggle both</button>
-                <button type="button" class="btn btn-primary">Toggle first</button>
-                <button type="button" class="btn btn-primary">Toggle second</button>
-                <button type="button" class="btn btn-primary">Toggle first</button>
-                <button type="button" class="btn btn-primary">Toggle second</button>
+                <button aria-expanded="false" aria-controls="multipleCollapse1 multipleCollapse2" data-bs-toggle="collapse" data-bs-target=".multiple-collapse" type="button" class="btn btn-primary">Toggle both</button>
+                <button aria-expanded="false" aria-controls="multipleCollapse1" data-bs-toggle="collapse" data-bs-target="#multipleCollapse1" type="button" class="btn btn-primary">Toggle first</button>
+                <button aria-expanded="false" aria-controls="multipleCollapse2" data-bs-toggle="collapse" data-bs-target="#multipleCollapse2" type="button" class="btn btn-primary">Toggle second</button>
+                <button aria-expanded="false" aria-controls="multipleCollapse1" data-bs-toggle="collapse" data-bs-target="#multipleCollapse1" type="button" class="btn btn-primary">Toggle first</button>
+                <button aria-expanded="false" aria-controls="multipleCollapse2" data-bs-toggle="collapse" data-bs-target="#multipleCollapse2" type="button" class="btn btn-primary">Toggle second</button>
                 <div class="row">
                   <div class="col">
-                    <div class="multiple-collapse" id="multipleCollapse1">
+                    <div class="collapse multiple-collapse" id="multipleCollapse1">
                       <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
                     </div>
                   </div>
                   <div class="col">
-                    <div class="multiple-collapse" id="multipleCollapse2">
+                    <div class="collapse multiple-collapse" id="multipleCollapse2">
                       <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
                     </div>
                   </div>
